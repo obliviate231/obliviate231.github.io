@@ -1,24 +1,24 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>hello云计算 | Obliviate</title><meta name="author" content="Obliviate"><meta name="copyright" content="Obliviate"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文是课内实验报告">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>hello云计算(Hive-sql) | Obliviate</title><meta name="author" content="Obliviate"><meta name="copyright" content="Obliviate"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本文是课内实验报告">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello云计算">
+<meta property="og:title" content="hello云计算(Hive-sql)">
 <meta property="og:url" content="https://obliviate231.github.io/2025/02/25/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/index.html">
 <meta property="og:site_name" content="Obliviate">
 <meta property="og:description" content="本文是课内实验报告">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://obliviate231.github.io/img/my_profile.png">
 <meta property="article:published_time" content="2025-02-25T06:09:19.873Z">
-<meta property="article:modified_time" content="2025-02-26T11:48:56.654Z">
+<meta property="article:modified_time" content="2025-03-08T08:27:18.578Z">
 <meta property="article:author" content="Obliviate">
 <meta property="article:tag" content="分布式">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://obliviate231.github.io/img/my_profile.png"><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "hello云计算",
+  "headline": "hello云计算(Hive-sql)",
   "url": "https://obliviate231.github.io/2025/02/25/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/",
   "image": "https://obliviate231.github.io/img/my_profile.png",
   "datePublished": "2025-02-25T06:09:19.873Z",
-  "dateModified": "2025-02-26T11:48:56.654Z",
+  "dateModified": "2025-03-08T08:27:18.578Z",
   "author": [
     {
       "@type": "Person",
@@ -155,9 +155,566 @@
   },
   autoDarkmode: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'hello云计算',
+  title: 'hello云计算(Hive-sql)',
   isHighlightShrink: false,
   isToc: true,
   pageType: 'post'
-}</script><link rel="stylesheet" href="/css/Gradient_background.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-color: #efefef;"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/my_wallpaper.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Obliviate</span></a><a class="nav-page-title" href="/"><span class="site-name">hello云计算</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">hello云计算</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-25T06:09:19.873Z" title="发表于 2025-02-25 14:09:19">2025-02-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-26T11:48:56.654Z" title="更新于 2025-02-26 19:48:56">2025-02-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/c/">c++</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="实验一-hadoop伪分布安装部署"><a href="#实验一-hadoop伪分布安装部署" class="headerlink" title="实验一 hadoop伪分布安装部署"></a>实验一 hadoop伪分布安装部署</h1><p>跟着实验文档安装jdk和hadoop, master和slave01,slave02做对应的部署</p>
-<h1 id="实验二"><a href="#实验二" class="headerlink" title="实验二"></a>实验二</h1></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://obliviate231.github.io">Obliviate</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://obliviate231.github.io/2025/02/25/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/">https://obliviate231.github.io/2025/02/25/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://obliviate231.github.io" target="_blank">Obliviate</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/">分布式</a></div><div class="post-share"><div class="social-share" data-image="/img/my_profile.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related  no-desc" href="/2025/02/24/hello%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86/" title="hello多核处理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">hello多核处理</div></div></div></a><a class="pagination-related" href="/2025/02/26/cmu15445/" title="hello多核处理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">hello多核处理</div></div><div class="info-2"><div class="info-item-1">cmu15445 速通2022 CMU-15445 全总结 - 知乎 CMU15445 Fall2023 Project 0-4 通关全记录 - 知乎 25.2.26环境配置前缀树208. 实现 Trie (前缀树) 123456789101112131415161718192021222324252627282930313233343536373839404142class Trie &#123;private:    vector&lt;Trie*&gt; son;    bool isEnd;    Trie* searchProfix(string prefix)&#123;        Trie* node = this;        for(char ch: prefix) &#123;            ch -= &#x27;a&#x27;;            if(node-&gt;son[ch] == nullptr)&#123;                return nullptr;            &#125;          ...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related no-desc" href="/2025/02/24/hello%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86/" title="hello多核处理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-02-24</div><div class="info-item-2">hello多核处理</div></div></div></a><a class="pagination-related" href="/2025/02/26/cmu15445/" title="hello多核处理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-02-26</div><div class="info-item-2">hello多核处理</div></div><div class="info-2"><div class="info-item-1">cmu15445 速通2022 CMU-15445 全总结 - 知乎 CMU15445 Fall2023 Project 0-4 通关全记录 - 知乎 25.2.26环境配置前缀树208. 实现 Trie (前缀树) 123456789101112131415161718192021222324252627282930313233343536373839404142class Trie &#123;private:    vector&lt;Trie*&gt; son;    bool isEnd;    Trie* searchProfix(string prefix)&#123;        Trie* node = this;        for(char ch: prefix) &#123;            ch -= &#x27;a&#x27;;            if(node-&gt;son[ch] == nullptr)&#123;                return nullptr;            &#125;          ...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/my_profile.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Obliviate</div><div class="author-info-description">个人博客 | 技术笔记与生活随笔</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/obliviate231" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2245688624@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2245688524&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Not for victory, but for the thrill of near-death at defeat's brink.</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%B8%80-hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"><span class="toc-number">1.</span> <span class="toc-text">实验一 hadoop伪分布安装部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E4%BA%8C"><span class="toc-number">2.</span> <span class="toc-text">实验二</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2025 By Obliviate</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.3</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+}</script><link rel="stylesheet" href="/css/Gradient_background.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-color: #efefef;"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/my_wallpaper.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Obliviate</span></a><a class="nav-page-title" href="/"><span class="site-name">hello云计算(Hive-sql)</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">hello云计算(Hive-sql)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-25T06:09:19.873Z" title="发表于 2025-02-25 14:09:19">2025-02-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-08T08:27:18.578Z" title="更新于 2025-03-08 16:27:18">2025-03-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/c/">c++</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="MySQL-安装配置实验报告"><a href="#MySQL-安装配置实验报告" class="headerlink" title="MySQL 安装配置实验报告"></a>MySQL 安装配置实验报告</h1><h2 id="一、实习目的和实习意义"><a href="#一、实习目的和实习意义" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习的主要目的是为 Hive 数仓安装 MySQL 作为元数据存储库，通过使用 yum 安装方式在 Centos 7.5 系统上安装 MySQL 5.7.25 版本，并对其进行一系列配置操作，掌握 Yum 安装 MySQL 相关命令以及 MySQL 配置相关命令。实习的意义在于熟悉 MySQL 安装与配置流程，为后续 Hive 数仓的搭建和使用奠定基础，提升在大数据开发环境中对数据库的操作能力。</p>
+<h2 id="二、实习单位和实习岗位"><a href="#二、实习单位和实习岗位" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程"><a href="#三、实习内容和实习过程" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容"><a href="#（一）实习内容" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>使用 yum 安装方式安装 MySQL 数据库。</li>
+<li>对 MySQL 进行配置，包括修改 root 用户密码、添加新用户并赋予远程访问权限、修改数据库默认编码。</li>
+<li>掌握 MySQL 几个重要目录的作用，如配置文件目录、日志文件目录、服务启动脚本目录等。</li>
+</ol>
+<h3 id="（二）实习过程"><a href="#（二）实习过程" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li><strong>进入实验并切换用户</strong>：进入实验后，切换到 root 用户（密码：zkpk），命令为 <code>[zkpk@master ~]# su root</code> 并输入密码 zkpk。</li>
+<li><strong>卸载系统自带数据库</strong>：查看并卸载系统自带的 mariadb-lib 数据库，先切换到根目录 <code>[root@master zkpk]# cd</code>，然后通过 <code>rpm -qa|grep mariadb</code> 查看，最后使用 <code>yum -y remove mariadb-libs-5.5.56-2.el7.x86_64</code> 卸载。</li>
+<li>添加 MySQL yum 源：<ul>
+<li>下载 mysql 源安装包：<code>[root@master ~]# wget http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm</code></li>
+<li>安装 mysql 源：<code>[root@master ~]# yum -y localinstall mysql57-community-release-el7-8.noarch.rpm</code></li>
+<li>检查 mysql 源是否安装成功：<code>[root@master ~]# yum repolist enabled | grep &quot;mysql.*-community.*&quot;</code></li>
+</ul>
+</li>
+<li><strong>安装 MySQL</strong>：使用命令 <code>[root@master ~]# yum -y install mysql-community-server</code> 安装 MySQL，安装 mysql 服务端时，客户端会作为依赖自动安装。</li>
+<li>启动 MySQL 服务：<ul>
+<li>启动命令：<code>[root@master ~]# systemctl start mysqld</code></li>
+<li>查看启动状态：<code>[root@master ~]# systemctl status mysqld</code>，出现绿色 running 字样表示成功。</li>
+</ul>
+</li>
+<li><strong>设置开机启动</strong>：使用命令 <code>[root@master ~]# systemctl enable mysqld</code> 和 <code>[root@master ~]# systemctl daemon-reload</code> 设置开机启动。</li>
+<li>修改 root 默认密码：<ul>
+<li>查看随机默认密码：<code>[root@master ~]# grep &#39;temporary password&#39; /var/log/mysqld.log</code></li>
+<li>登录 mysql：<code>[root@master ~]# mysql -uroot -p</code>，密码为上述查找到的随机密码。</li>
+<li>修改密码：使用 <code>mysql&gt; ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;MyNewPass4!&#39;;</code> 或 <code>mysql&gt; set password for &#39;root&#39;@&#39;localhost&#39;=password(&#39;MyNewPass4!&#39;);</code> 修改密码，由于 mysql 5.7 默认密码检查策略要求高，会提示错误。</li>
+</ul>
+</li>
+<li>修改 mysql 密码策略：<ul>
+<li>查看密码策略信息：<code>mysql&gt; show variables like &#39;%password%&#39;;</code></li>
+<li>关闭密码策略：先退出 mysql 客户端 <code>mysql&gt;exit;</code>，然后在 <code>/etc/my.cnf</code> 文件的 <code>[mysqld]</code> 模块下添加 <code>validate_password = off</code>，最后重新启动 mysql 服务 <code>[root@master ~]# systemctl restart mysqld</code>。</li>
+</ul>
+</li>
+<li>修改 root 密码为 zkpk：<ul>
+<li>登录 mysql：<code>[root@master ~]# mysql -uroot -pMyNewPass4!</code></li>
+<li>修改密码：使用 <code>mysql&gt; ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;zkpk&#39;;</code> 或 <code>mysql&gt; set password for &#39;root&#39;@&#39;localhost&#39;=password(&#39;zkpk&#39;);</code> 修改密码。</li>
+</ul>
+</li>
+<li>添加 zkpk 用户并赋予远程登录权限：<ul>
+<li>执行命令：<code>mysql&gt;grant all on *.* to zkpk@&#39;%&#39; identified by &#39;zkpk&#39;; </code>、<code>mysql&gt;grant all on *.* to zkpk@&#39;localhost&#39; identified by &#39;zkpk&#39;; </code>、<code>mysql&gt;grant all on *.* to zkpk@&#39;master&#39; identified by &#39;zkpk&#39;; </code>、<code>mysql&gt;flush privileges;</code> 并退出 <code>mysql&gt;exit;</code></li>
+<li>验证密码策略：使用 root 用户（密码为 zkpk）登录 <code>[zkpk@master ~]$ mysql -uroot -pzkpk</code>，验证完毕后退出 <code>mysql&gt;exit;</code></li>
+<li>验证 zkpk 用户：使用 zkpk 用户（密码为 zkpk）登录 <code>[root@master ~]$ mysql -uzkpk -pzkpk</code>，验证完毕后退出 <code>mysql&gt;exit;</code></li>
+</ul>
+</li>
+<li>配置默认编码为 utf8：<ul>
+<li>修改配置文件：在 <code>/etc/my.cnf</code> 文件中 <code>[mysqld]</code> 下方添加 <code>character_set_server=utf8</code> 和 <code>init_connect=&#39;SET NAMES utf8&#39;</code>，在文件末尾添加 <code>[client]</code> 模块并设置 <code>default-character-set=utf8</code>。</li>
+<li>重新启动服务：<code>[root@master ~]# systemctl restart mysqld</code></li>
+<li>查看编码：使用 root 用户登录 mysql <code>[root@master ~]# mysql –uroot –pzkpk</code>，然后 <code>mysql&gt; show variables like &#39;%character%&#39;;</code> 查看编码。</li>
+</ul>
+</li>
+<li>了解 MySQL 重要目录：<ul>
+<li>配置文件：<code>/etc/my.cnf</code></li>
+<li>日志文件：<code>/var/log/mysqld.log</code></li>
+<li>服务启动脚本：<code>/usr/lib/systemd/system/mysqld.service</code></li>
+<li>socket 文件：<code>/var/run/mysqld/mysqld.pid</code></li>
+<li>数据库目录：<code>/var/lib/mysql/</code></li>
+<li>相关命令：<code>/usr/bin</code>（mysqladmin mysqldump 等命令）</li>
+<li>启动脚本：<code>/etc/rc.d/init.d/</code>（启动脚本文件 mysql 的目录）</li>
+</ul>
+</li>
+</ol>
+<p><img src="D:\myblog\source\myimgs\image-20250306220613389.png" alt="image-20250306220613389"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220631430.png" alt="image-20250306220631430"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220644108.png" alt="image-20250306220644108"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220656906.png" alt="image-20250306220656906"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220703066.png" alt="image-20250306220703066"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220710277.png" alt="image-20250306220710277"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220718868.png" alt="image-20250306220718868"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220736493.png" alt="image-20250306220736493"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220743808.png" alt="image-20250306220743808"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220752682.png" alt="image-20250306220752682"></p>
+<h2 id="四、总结与体会"><a href="#四、总结与体会" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，成功掌握了在 Centos 7.5 系统上使用 yum 方式安装 MySQL 5.7.25 版本的方法，以及对 MySQL 进行一系列配置的操作，包括修改初始密码、添加用户并赋予远程权限、修改数据库默认编码等。在实验过程中，遇到了密码策略不符合要求的问题，通过深入学习和实践解决了该问题，对 MySQL 的密码安全机制有了更深刻的理解。同时，了解了 MySQL 几个重要目录的作用，为后续在大数据开发中更好地管理和使用 MySQL 数据库奠定了基础。本次实习不仅提升了实际操作能力，也增强了对大数据开发中数据库相关知识的理解和应用能力。在未来的学习和工作中，将更加注重对数据库知识的深入学习和实践，以更好地满足大数据开发的需求。</p>
+<h1 id="Hive-数仓安装部署实验报告"><a href="#Hive-数仓安装部署实验报告" class="headerlink" title="Hive 数仓安装部署实验报告"></a>Hive 数仓安装部署实验报告</h1><h2 id="一、实习目的和实习意义-1"><a href="#一、实习目的和实习意义-1" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习旨在学习 Hive 的安装部署，通过实际操作掌握快速构建 Hive 数据仓库的方法。其意义在于使学生熟悉 Hive 在大数据开发中的应用流程，为后续利用 Hive 进行数据处理、分析等工作打下坚实基础，提升在大数据领域的实践能力，更好地适应大数据开发岗位的需求。</p>
+<h2 id="二、实习单位和实习岗位-1"><a href="#二、实习单位和实习岗位-1" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-1"><a href="#三、实习内容和实习过程-1" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-1"><a href="#（一）实习内容-1" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，确保相关进程正常运行。</li>
+<li>解压并安装 Hive，将 Hive 安装包解压到指定目录并查看文件结构。</li>
+<li>向 MySQL 中添加用户并创建 Hive 元数据库，配置相关权限。</li>
+<li>配置 Hive，创建并编辑配置文件 <code>hive-site.xml</code>，设置 Hive 元数据存储等相关参数。</li>
+<li>复制 MySQL 连接驱动到 Hive 的 <code>lib</code> 目录，保证 Hive 与 MySQL 的连接。</li>
+<li>配置系统用户环境变量，添加 Hive 相关路径并使其生效。</li>
+<li>初始化 Hive 元数据库，将 Hive 元数据同步到 MySQL 中，并启动和验证 Hive 安装。</li>
+</ol>
+<h3 id="（二）实习过程-1"><a href="#（二）实习过程-1" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li><p>启动 Hadoop 集群：</p>
+<ul>
+<li>在 master 节点上使用命令 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点上运行 <code>jps</code> 命令，确认 <code>NameNode</code>, <code>SecondaryNameNode</code>, <code>ResourceManager</code> 进程已启动。</li>
+<li>分别在 <code>slave01</code> 和 <code>slave02</code> 节点上运行 <code>jps</code> 命令，确认 <code>DataNode</code>, <code>NodeManager</code> 进程已启动。</li>
+</ul>
+</li>
+<li><p>解压并安装 Hive：</p>
+<ul>
+<li>从 Hive 的公共目录 <code>/home/zkpk/tgz/hive</code> 下将 <code>apache-hive-2.1.1-bin.tar.gz</code> 文件拷贝到 <code>/home/zkpk</code> 目录下，使用命令 <code>[zkpk@master ~]$ cp ~/tgz/hive/apache-hive-2.1.1-bin.tar.gz ~/</code>。</li>
+<li>解压 Hive 安装包，命令为 <code>[zkpk@master ~]$ tar -zxvf /home/zkpk/apache-hive-2.1.1-bin.tar.gz</code>。</li>
+<li>进入解压后的 Hive 目录并查看文件，命令为 <code>[zkpk@master ~]$ cd /home/zkpk/apache-hive-2.1.1-bin</code> 和 <code>[zkpk@master apache-hive-2.1.1-bin]$ ll</code>。</li>
+</ul>
+</li>
+<li><p>向 MySQL 中添加用户和创建数据库：</p>
+<ul>
+<li>以 root 用户登录 MySQL（数据库的 root 用户），密码为 <code>zkpk</code>，命令为 <code>[zkpk@master apache-hive-2.1.1-bin]$ cd</code> 和 <code>[zkpk@master ~]# mysql –uroot -pzkpk</code>。</li>
+<li>创建 <code>hadoop</code> 用户（密码：<code>hadoop</code>），执行命令 <code>mysql&gt;grant all on *.* to hadoop@&#39;%&#39; identified by &#39;hadoop&#39;;</code>、<code>mysql&gt;grant all on *.* to hadoop@&#39;localhost&#39; identified by &#39;hadoop&#39;;</code>、<code>mysql&gt;grant all on *.* to hadoop@&#39;master&#39; identified by &#39;hadoop&#39;;</code> 和 <code>mysql&gt;flush privileges;</code>。</li>
+<li>创建名为 <code>hive</code> 的数据库，命令为 <code>mysql&gt; create database hive;</code>。</li>
+<li>退出 MySQL，命令为 <code>mysql&gt; exit;</code>。</li>
+</ul>
+</li>
+<li><p>配置 Hive：</p>
+<ul>
+<li>进入 Hive 安装目录下的配置目录，命令为 <code>[zkpk@master ~]$ cd /home/zkpk/apache-hive-2.1.1-bin/conf/</code>。</li>
+<li>创建 Hive 配置文件 <code>hive-site.xml</code>，命令为 <code>[zkpk@master conf]$ vim hive-site.xml</code>。</li>
+<li>在 <code>hive-site.xml</code> 文件中添加相关配置内容，设置 <code>hive.metastore.local</code>、<code>javax.jdo.option.ConnectionURL</code>、<code>javax.jdo.option.ConnectionDriverName</code>、<code>javax.jdo.option.ConnectionUserName</code> 和 <code>javax.jdo.option.ConnectionPassword</code> 等属性。</li>
+</ul>
+</li>
+<li><p>复制 MySQL 连接驱动</p>
+<p> ：</p>
+<ul>
+<li>将 MySQL 驱动 <code>mysql-connector-java-5.1.28.jar</code> 从 <code>/home/zkpk/tgz/sqoop/</code> 目录复制到 Hive 根目录下的 <code>lib</code> 目录中，命令为 <code>[zkpk@master conf]$ cd</code>、<code>[zkpk@master ~]$ cp /home/zkpk/tgz/sqoop/mysql-connector-java-5.1.28.jar /home/zkpk/apache-hive-2.1.1-bin/lib/</code> 和 <code>[zkpk@master ~]$ cd apache-hive-2.1.1-bin/lib/</code>，并使用 <code>[zkpk@master lib]$ ll | grep mysql-connector-java-5.1.28.jar</code> 查看。</li>
+</ul>
+</li>
+<li><p>配置系统用户环境变量：</p>
+<ul>
+<li>编辑 <code>~/.bash_profile</code> 文件，命令为 <code>[zkpk@master lib]$ cd</code> 和 <code>[zkpk@master ~]$ vim /home/zkpk/.bash_profile</code>。</li>
+<li>在文件中添加 Hive 相关环境变量配置 <code>#HIVE export HIVE_HOME=/home/zkpk/apache-hive-2.1.1-bin export PATH=$PATH:$HIVE_HOME/bin</code>。</li>
+<li>使环境变量生效，命令为 <code>[zkpk@master ~]$ source /home/zkpk/.bash_profile</code>。</li>
+</ul>
+</li>
+<li><p>启动并验证 Hive 安装：</p>
+<ul>
+<li>初始化 Hive 元数据库，使用命令 <code>[zkpk@master ~]$ schematool -dbType mysql -initSchema</code>，将 Hive 的元数据同步到 MySQL 中。</li>
+<li>启动 Hive 客户端，命令为 <code>[zkpk@master ~]$ hive</code>，若未配置用户环境需到 Hive 根目录下执行 <code>/bin/hive</code>。</li>
+<li>退出 Hive 客户端，命令为 <code>hive&gt;exit;</code>。</li>
+</ul>
+</li>
+</ol>
+<p><img src="D:\myblog\source\myimgs\image-20250306220857885.png" alt="image-20250306220857885"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220906261.png" alt="image-20250306220906261"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220946545.png" alt="image-20250306220946545"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306220956346.png" alt="image-20250306220956346"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306221005899.png" alt="image-20250306221005899"></p>
+<p><img src="D:\myblog\source\myimgs\image-20250306221013069.png" alt="image-20250306221013069"></p>
+<h2 id="四、总结与体会-1"><a href="#四、总结与体会-1" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，成功掌握了 Apache Hive 的安装部署流程，包括 Hadoop 集群的启动、Hive 的解压安装、与 MySQL 的集成配置以及环境变量的设置等关键步骤。深刻认识到 Hive 元数据同步到 MySQL 这一操作的重要性，若不执行会导致 Hive 启动错误。在实践过程中，对 Shell 命令的使用更加熟练，也进一步理解了 Hive 原理以及其在大数据开发中的地位和作用。同时，也意识到在安装部署过程中需要注意细节，如配置文件的准确编写、权限的合理设置等。在未来的大数据开发工作中，将能够更加自信地运用 Hive 进行数据仓库的构建和管理，为数据分析和处理提供有力支持。</p>
+<h1 id="Hive-数仓创建、删除数据库、表实验报告"><a href="#Hive-数仓创建、删除数据库、表实验报告" class="headerlink" title="Hive 数仓创建、删除数据库、表实验报告"></a>Hive 数仓创建、删除数据库、表实验报告</h1><h2 id="一、实习目的和实习意义-2"><a href="#一、实习目的和实习意义-2" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>实习目的在于掌握在 Hive 数据仓库中创建数据库、管理表（包括内部表和外部表）以及删除数据库和表的操作方法。通过这些实践操作，提升学生在大数据开发中对 Hive 的应用能力，为后续进行复杂的数据处理和分析工作奠定基础。实习意义在于让学生深入理解 Hive 数据仓库的使用机制，增强对大数据存储和管理的认知，培养实际动手能力，以便更好地适应大数据开发岗位的工作需求。</p>
+<h2 id="二、实习单位和实习岗位-2"><a href="#二、实习单位和实习岗位-2" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-2"><a href="#三、实习内容和实习过程-2" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-2"><a href="#（一）实习内容-2" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，为 Hive 运行提供基础环境。</li>
+<li>进入 Hive 命令行，使用 Hive SQL 语句进行操作。</li>
+<li>创建数据库、内部表和外部表，并向表中添加数据。</li>
+<li>了解内部表与外部表的区别，删除表和数据库。</li>
+</ol>
+<h3 id="（二）实习过程-2"><a href="#（二）实习过程-2" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>启动 Hadoop 集群：<ul>
+<li>在 master 节点上执行 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点上运行 <code>jps</code> 命令，确认 <code>NameNode</code>、<code>SecondaryNameNode</code>、<code>ResourceManager</code> 进程已启动。</li>
+<li>分别在 <code>slave01</code> 和 <code>slave02</code> 节点上运行 <code>jps</code> 命令，确认 <code>DataNode</code>、<code>NodeManager</code> 进程已启动。</li>
+</ul>
+</li>
+<li><strong>进入 Hive 命令行</strong>：在 Linux 终端执行 <code>[zkpk@master ~]hive</code>，打开 Hive CLI 客户端。</li>
+<li>创建数据库、数据表：<ul>
+<li><strong>查看所有数据库</strong>：在 Hive 客户端输入 <code>hive&gt; show databases;</code>，查看当前已有的数据库。</li>
+<li><strong>创建数据库</strong>：执行 <code>hive&gt; create database sogou;</code>，创建名为 <code>sogou</code> 的数据库。</li>
+<li><strong>创建内部表</strong>：先进入 <code>sogou</code> 数据库 <code>hive&gt; use sogou;</code>，然后使用 <code>hive&gt; CREATE TABLE IF NOT EXISTS sogou_inner(ts STRING, uid STRING, keyword STRING, rank INT, </code>order<code> INT, url STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code> 创建名为 <code>sogou_inner</code> 的内部表。接着通过 <code>hive&gt; show tables;</code> 确认表是否创建成功，并使用 <code>hive&gt; load data local inpath &#39;/home/zkpk/experiment/sogou_1w.txt&#39; into table sogou_inner;</code> 向表中添加数据，再用 <code>hive&gt; select * from sogou_inner;</code> 查看数据是否导入成功。</li>
+<li><strong>创建外部表</strong>：使用 <code>hive&gt; CREATE EXTERNAL TABLE IF NOT EXISTS sogou_outer(ts STRING, uid STRING, keyword STRING, rank INT, </code>order<code> INT, url STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code> 创建名为 <code>sogou_outer</code> 的外部表。通过 <code>hive&gt; show tables;</code> 确认表是否创建成功，再执行 <code>hive&gt; load data local inpath &#39;/home/zkpk/experiment/sogou_1w.txt&#39; into table sogou_outer;</code> 和 <code>hive&gt; select * from sogou_outer;</code> 向表中添加数据并查看。</li>
+</ul>
+</li>
+<li>删除数据库、数据表：<ul>
+<li><strong>退出 Hive 客户端查看数据存储路径内容</strong>：执行 <code>hive&gt; exit;</code> 退出 Hive 客户端，在 Linux 终端通过 <code>[zkpk@master ~]$ hadoop fs -ls /user/hive/warehouse/sogou.db</code> 查看 HDFS 文件系统中 Hive 数据存储路径中的内容。</li>
+<li><strong>删除表</strong>：重新进入 Hive 交互客户端 <code>[zkpk@master ~]$ hive</code>，进入 <code>sogou</code> 数据库 <code>hive&gt; use sogou;</code>，分别执行 <code>hive&gt; drop table sogou_inner;</code> 和 <code>hive&gt; drop table sogou_outer;</code> 删除内部表和外部表。</li>
+<li><strong>再次查看数据存储路径内容并对比</strong>：再次退出 Hive 客户端 <code>hive&gt; exit;</code>，通过 <code>[zkpk@master ~]$ hadoop fs -ls /user/hive/warehouse/sogou.db</code> 查看 HDFS 文件系统中 Hive 数据存储路径中的内容，对比发现删除内部表时 HDFS 上的数据被删除，而删除外部表时只删除了元数据信息，实际数据保留。</li>
+<li><strong>删除数据库</strong>：重新进入 Hive 客户端 <code>[zkpk@master ~]$ hive</code>，由于数据库非空，执行 <code>hive&gt; drop database sogou cascade;</code> 强制删除数据库。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307090132985.png" alt="image-20250307090132985"></p>
+<p><img src="/myimgs/image-20250307090142255.png" alt="image-20250307090142255"></p>
+<p><img src="/myimgs/image-20250307090150489.png" alt="image-20250307090150489"></p>
+<p><img src="/myimgs/image-20250307090158214.png" alt="image-20250307090158214"></p>
+<p><img src="/myimgs/image-20250307090205892.png" alt="image-20250307090205892"></p>
+<p><img src="/myimgs/image-20250307090213189.png" alt="image-20250307090213189"></p>
+<p><img src="/myimgs/image-20250307090221622.png" alt="image-20250307090221622"></p>
+<p><img src="/myimgs/image-20250307090233079.png" alt="image-20250307090233079"></p>
+<h2 id="四、总结与体会-2"><a href="#四、总结与体会-2" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，成功掌握了在 Hive 中创建和删除数据库、表的操作。深刻理解了内部表和外部表的本质区别，即删除内部表时数据和元数据都会被删除，而外部表仅删除元数据，数据得以保留。在实验过程中，对 Hive SQL 语句的使用更加熟练，也体会到 Hadoop 集群稳定运行对 Hive 操作的重要性。同时，认识到在处理数据库和表时，要谨慎操作，尤其是删除操作，避免误删重要数据。在未来的大数据开发工作中，这些技能将为数据的高效管理和分析提供有力支持，也激励自己继续深入学习 Hive 及其他大数据相关技术，提升自身的专业能力。</p>
+<h1 id="Hive-数仓导入、导出表数据实验报告"><a href="#Hive-数仓导入、导出表数据实验报告" class="headerlink" title="Hive 数仓导入、导出表数据实验报告"></a>Hive 数仓导入、导出表数据实验报告</h1><h2 id="一、实习目的和实习意义-3"><a href="#一、实习目的和实习意义-3" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习目的是全面掌握 Hive 表数据的导入和导出方法，通过在 Hive 中创建表并运用多种方式进行数据导入和导出操作，提升对 Hive 数据处理的实践能力。实习意义在于加深对 Hive 数据仓库机制的理解，熟练运用 Hive SQL 进行数据管理，为后续在大数据开发中高效处理和分析数据奠定基础，使学生能够更好地适应大数据开发岗位的实际需求。</p>
+<h2 id="二、实习单位和实习岗位-3"><a href="#二、实习单位和实习岗位-3" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-3"><a href="#三、实习内容和实习过程-3" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-3"><a href="#（一）实习内容-3" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，为 Hive 运行提供基础环境。</li>
+<li>进入 Hive 命令行，使用 Hive SQL 语句进行操作。</li>
+<li>创建数据库和数据表。</li>
+<li>采用本地文件导入、HDFS 文件导入、表查询结果导入等方式将数据导入 Hive 表。</li>
+<li>将 Hive 表中的数据导出至本地文件。</li>
+</ol>
+<h3 id="（二）实习过程-3"><a href="#（二）实习过程-3" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>启动 Hadoop 集群：<ul>
+<li>在 master 节点上执行 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点上运行 <code>jps</code> 命令，确认 <code>NameNode</code>、<code>SecondaryNameNode</code>、<code>ResourceManager</code> 进程已启动。</li>
+<li>分别在 <code>slave01</code> 和 <code>slave02</code> 节点上运行 <code>jps</code> 命令，确认 <code>DataNode</code>、<code>NodeManager</code> 进程已启动。</li>
+</ul>
+</li>
+<li><strong>进入 Hive 命令行</strong>：在 Linux 终端执行 <code>[zkpk@master ~]hive</code>，打开 Hive CLI 客户端。</li>
+<li>创建数据库、数据表：<ul>
+<li><strong>查看所有数据库</strong>：在 Hive 客户端输入 <code>hive&gt; show databases;</code>，查看当前已有的数据库。</li>
+<li><strong>创建数据库</strong>：若不存在 <code>sogou</code> 数据库，则执行 <code>hive&gt; create database sogou;</code> 创建，并再次使用 <code>hive&gt; show databases;</code> 查看。</li>
+<li><strong>创建表</strong>：创建 <code>sogou_inner</code> 表，执行 <code>hive&gt; CREATE TABLE IF NOT EXISTS sogou.sogou_inner(ts STRING, uid STRING, keyword STRING, rank INT, </code>order<code> INT, url STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code> 。之后创建 <code>sogou_inner1</code> 表，语句为 <code>hive&gt; CREATE TABLE IF NOT EXISTS sogou.sogou_inner1(ts STRING, uid STRING, keyword STRING, rank INT, </code>order<code> INT, url STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code> 。还创建了 <code>sogou_inner2</code> 表，使用 <code>hive&gt; CREATE TABLE IF NOT EXISTS sogou.sogou_inner2(ts STRING, uid STRING, keyword STRING, rank INT, </code>order<code> INT, url STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code> 。最后创建 <code>sogou_inner3</code> 表，语句是 <code>hive&gt; create table sogou_inner3 as select * from sogou_inner;</code> 。</li>
+</ul>
+</li>
+<li>导入数据：<ul>
+<li><strong>本地文件导入</strong>：将 <code>experiment</code> 目录下的 <code>sogou.10w.utf8</code> 导入到 <code>sogou_inner</code> 表中，执行 <code>hive&gt; load data local inpath &#39;/home/zkpk/experiment/sogou.10w.utf8&#39; into table sogou.sogou_inner;</code> ，如需覆盖原数据可在 <code>into</code> 前添加 <code>overwrite</code> 。</li>
+<li><strong>HDFS 文件导入</strong>：先使用 <code>exit</code> 命令退出 Hive 命令行，在 Linux 终端将 <code>experiment</code> 中的数据文件 <code>sogou.10w.utf8</code> 上传到 HDFS 的根目录，即 <code>[zkpk@master ~]$ hadoop fs -put experiment/sogou.10w.utf8 /</code> 并使用 <code>[zkpk@master ~]$ hadoop fs -ls /</code> 查看。再进入 Hive 命令行，执行 <code>hive&gt; load data inpath &#39;/sogou.10w.utf8&#39; into table sogou.sogou_inner1;</code> 导入数据，同样可添加 <code>overwrite</code> 覆盖原数据。</li>
+<li><strong>表查询结果导入</strong>：进入 <code>sogou</code> 数据库 <code>hive&gt; use sogou;</code> ，将从 <code>sogou_inner</code> 表中查询的结果导入到 <code>sogou_inner2</code> 表，执行 <code>hive&gt; insert into table sogou_inner2 select * from sogou_inner;</code> ，可添加 <code>overwrite</code> 覆盖原数据。</li>
+</ul>
+</li>
+<li>导出数据：<ul>
+<li><strong>查看数据存放位置</strong>：在 Hive 中执行 <code>hive&gt; show create table sogou_inner2;</code> 查看 <code>sogou_inner2</code> 表在 HDFS 上的数据存放位置。</li>
+<li><strong>导出数据到本地</strong>：使用 <code>exit</code> 命令退出 Hive 命令行，在 Linux 终端通过 <code>[zkpk@master ~]$ hadoop fs -get hdfs://master:9000/user/hive/warehouse/sogou.db/sogou_inner2 /home/zkpk/sogou_inner2</code> 将数据导出到本地，并使用 <code>[zkpk@master ~]$ ll</code> 查看。</li>
+<li><strong>验证数据</strong>：进入导出数据的目录 <code>[zkpk@master ~]$ cd sogou_inner2</code> ，使用 <code>[zkpk@master sogou_inner2]$ ls</code> 和 <code>[zkpk@master sogou_inner2]$ tail -10 000000_0</code> 查看并验证下载的 Hive 表数据文件内容。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307090431935.png" alt="image-20250307090431935"></p>
+<p><img src="/myimgs/image-20250307090440628.png" alt="image-20250307090440628"></p>
+<p><img src="/myimgs/image-20250307090452092.png" alt="image-20250307090452092"></p>
+<p><img src="/myimgs/image-20250307090458223.png" alt="image-20250307090458223"></p>
+<p><img src="/myimgs/image-20250307090504489.png" alt="image-20250307090504489"></p>
+<p><img src="/myimgs/image-20250307090513071.png" alt="image-20250307090513071"></p>
+<p><img src="/myimgs/image-20250307090522637.png" alt="image-20250307090522637"></p>
+<p><img src="/myimgs/image-20250307090530125.png" alt="image-20250307090530125"></p>
+<p><img src="/myimgs/image-20250307090538341.png" alt="image-20250307090538341"></p>
+<p><img src="/myimgs/image-20250307090545445.png" alt="image-20250307090545445"></p>
+<p><img src="/myimgs/image-20250307090554307.png" alt="image-20250307090554307"></p>
+<p><img src="/myimgs/image-20250307090607500.png" alt="image-20250307090607500"></p>
+<p><img src="/myimgs/image-20250307090615472.png" alt="image-20250307090615472"></p>
+<p><img src="/myimgs/image-20250307090625387.png" alt="image-20250307090625387"></p>
+<p><img src="/myimgs/image-20250307090636037.png" alt="image-20250307090636037"></p>
+<p><img src="/myimgs/image-20250307090645891.png" alt="image-20250307090645891"></p>
+<h2 id="四、总结与体会-3"><a href="#四、总结与体会-3" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，成功掌握了三种不同的数据导入方式（本地文件导入、HDFS 文件导入、表查询结果导入）以及将表中数据导出到本地的方法。在实验过程中，对 Hive SQL 的运用更加熟练，深刻体会到不同导入方式的特点和适用场景。同时，也意识到在进行数据导入和导出操作时，需要注意数据的准确性和完整性，以及对 Hadoop 与 Hive 之间协同工作的理解。这些实践经验将为今后在大数据开发工作中高效处理数据提供有力支持，也激励自己不断探索和学习更多大数据相关技术，以应对更复杂的工作挑战。</p>
+<h1 id="Hive-数仓操作分区表实验报告"><a href="#Hive-数仓操作分区表实验报告" class="headerlink" title="Hive 数仓操作分区表实验报告"></a>Hive 数仓操作分区表实验报告</h1><h2 id="一、实习目的和实习意义-4"><a href="#一、实习目的和实习意义-4" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习的目的是深入学习 Hive 客户端创建分区表的方法，掌握静态插入数据和开启动态分区插入数据的操作，并了解 HDFS 目录结构和数据的存储方式。实习意义在于提升对 Hive 分区表的操作能力，理解分区表在大数据处理中的重要性，为高效存储和查询数据提供支持，同时增强在大数据开发环境中运用 Hive 进行数据管理的实践技能，以适应实际工作中的数据处理需求。</p>
+<h2 id="二、实习单位和实习岗位-4"><a href="#二、实习单位和实习岗位-4" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-4"><a href="#三、实习内容和实习过程-4" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-4"><a href="#（一）实习内容-4" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，为 Hive 操作提供运行环境。</li>
+<li>将数据文件上传到 HDFS 特定目录。</li>
+<li>进入 Hive 客户端，创建数据库、外部表和分区表。</li>
+<li>分别以静态和动态分区的方式向分区表插入数据。</li>
+<li>查询 HDFS 上分区表的目录结构和数据。</li>
+</ol>
+<h3 id="（二）实习过程-4"><a href="#（二）实习过程-4" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>启动 Hadoop 集群：<ul>
+<li>在 master 节点上执行 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点运行 <code>jps</code> 命令，确认 <code>NameNode</code>、<code>SecondaryNameNode</code>、<code>ResourceManager</code> 进程启动。</li>
+<li>在 <code>slave01</code> 和 <code>slave02</code> 节点分别运行 <code>jps</code> 命令，确认 <code>DataNode</code>、<code>NodeManager</code> 进程启动。</li>
+</ul>
+</li>
+<li>上传数据到 HDFS：<ul>
+<li>创建 <code>/sogou_ext/20111230</code> 目录，使用命令 <code>[zkpk@master ~]$ hadoop fs -mkdir /sogou_ext</code> 和 <code>[zkpk@master ~]$ hadoop fs -mkdir /sogou_ext/20111230</code>。</li>
+<li>上传 <code>sogou.500w.utf8.1w.flt</code> 数据到 <code>/sogou_ext/20111230</code> 目录，执行 <code>[zkpk@master ~]$ hadoop fs -put /home/zkpk/experiment/sogou.500w.utf8.1w.flt /sogou_ext/20111230</code> 并使用 <code>[zkpk@master ~]$ hadoop fs -ls /sogou_ext/20111230</code> 查看。</li>
+</ul>
+</li>
+<li>进入 Hive 客户端并创建数据库和表：<ul>
+<li>进入 Hive 客户端，执行 <code>[zkpk@master ~]$ hive</code>。</li>
+<li>查看 Hive 中的数据库，使用 <code>hive&gt; show databases;</code>。</li>
+<li>创建 <code>sogou</code> 数据库，执行 <code>hive&gt; create database sogou;</code>。</li>
+<li>进入 <code>sogou</code> 数据库，使用 <code>hive&gt; use sogou;</code>。</li>
+<li>创建外部表 <code>sogou_ext_20111230</code>，使用 <code>CREATE EXTERNAL TABLE sogou.sogou_ext_20111230(ts STRING, uid STRING, keyword STRING, rank INT, </code>order<code> INT, url STRING, year INT, month INT, day INT, hour INT) COMMENT &#39;This is the sogou search data of extend data&#39; ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE LOCATION &#39;/sogou_ext/20111230&#39;;</code>。</li>
+<li>创建分区表 <code>sogou_partition</code>，使用 <code>CREATE TABLE sogou.sogou_partition(ts STRING, uid STRING, keyword STRING, rank INT, </code>order<code> INT, url STRING) COMMENT &#39;This is the sogou search data by partition&#39; partitioned by(year INT, month INT, day INT, hour INT) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code>。</li>
+</ul>
+</li>
+<li>静态分区插入数据并查询：<ul>
+<li>将查询 <code>sogou_ext_20111230</code> 的指定年月日的结果导入到分区表 <code>sogou_partition</code> 的指定分区，执行 <code>hive&gt; INSERT OVERWRITE TABLE sogou.sogou_partition PARTITION(year = 2011,month = 12,day = 30,hour = 0) select ts,uid,keyword,rank,</code>order<code>,url from sogou.sogou_ext_20111230 where year = 2011 and month = 12 and day = 30 and hour = 0 limit 10;</code>。</li>
+<li>退出 Hive 客户端，在 Linux 终端查询 HDFS 上分区表的目录结构和数据，执行 <code>hive&gt; exit;</code>、<code>[zkpk@master ~]$ hadoop fs -ls -R /user/hive/warehouse/sogou.db/sogou_partition</code> 和 <code>[zkpk@master ~]$ hadoop fs -cat /user/hive/warehouse/sogou.db/sogou_partition/year=2011/month=12/day=30/hour=0/000000_0</code>。</li>
+</ul>
+</li>
+<li>动态分区插入数据并查询：<ul>
+<li>清空分区表 <code>sogou_partition</code> 数据，执行 <code>hive&gt; truncate table sogou_partition;</code>。</li>
+<li>在 Hive CLI 命令行中开启动态分区，执行 <code>hive&gt; set hive.exec.dynamic.partition=true;</code>、<code>hive&gt; set hive.exec.dynamic.partition.mode=nonstrict;</code>、<code>hive&gt; set hive.exec.max.dynamic.partitions.pernode=1000;</code>。</li>
+<li>将查询 <code>sogou_ext_20111230</code> 的结果导入到分区表 <code>sogou_partition</code> 的分区，执行 <code>hive&gt; INSERT OVERWRITE TABLE sogou.sogou_partition PARTITION(year,month,day,hour) select * from sogou.sogou_ext_20111230;</code>。</li>
+<li>退出 Hive 客户端，在 Linux 终端查询 HDFS 上分区表的目录结构和数据，执行 <code>hive&gt; exit;</code>、<code>[zkpk@master ~]$ hadoop fs -ls -R /user/hive/warehouse/sogou.db/sogou_partition</code> 和 <code>[zkpk@master ~]$ hadoop fs -cat /user/hive/warehouse/sogou.db/sogou_partition/year=2011/month=12/day=30/hour=8/000000_0</code>。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307092201588.png" alt="image-20250307092201588"></p>
+<p><img src="/myimgs/image-20250307092209546.png" alt="image-20250307092209546"></p>
+<p><img src="/myimgs/image-20250307092215342.png" alt="image-20250307092215342"></p>
+<p><img src="/myimgs/image-20250307092222374.png" alt="image-20250307092222374"></p>
+<p><img src="/myimgs/image-20250307092241532.png" alt="image-20250307092241532"></p>
+<h2 id="四、总结与体会-4"><a href="#四、总结与体会-4" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，我全面掌握了 Hive 中创建分区表的方法，深刻理解了静态分区和动态分区插入数据方式的差异。静态分区需要手动指定每个分区的字段名和值，适合数据量较小且分区明确的情况；而动态分区则根据查询结果自动创建分区，更适合处理大量数据且分区不确定的场景。同时，通过查看 HDFS 上分区表的目录结构和数据，我直观地了解了分区表数据在 HDFS 上的存储形式，这有助于优化数据存储和查询效率。在实验过程中，我也意识到配置动态分区参数的重要性，合理设置参数可以避免因分区过多导致的性能问题。这些实践经验将对我未来在大数据开发中处理大规模数据时起到重要的指导作用，也激励我继续深入学习 Hive 和其他大数据技术，提升自己的专业能力。</p>
+<h1 id="Hive-数仓使用-distribute-by-查询数据实验报告"><a href="#Hive-数仓使用-distribute-by-查询数据实验报告" class="headerlink" title="Hive 数仓使用 distribute by 查询数据实验报告"></a>Hive 数仓使用 distribute by 查询数据实验报告</h1><h2 id="一、实习目的和实习意义-5"><a href="#一、实习目的和实习意义-5" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习的目的是通过操作 Hive 命令行，熟练掌握使用 <code>distribute by</code> 查询数据的方法，深入理解其原理。<code>distribute by</code> 会根据特定字段将数据分发到不同的 <code>reduce</code> 进行处理，结合 <code>sort by</code> 对同一组数据进行排序，从而能够更好地分析数据。实习意义在于提升在 Hive 环境下对数据的处理和分析能力，为在大数据开发中处理类似业务场景（如统计各店铺营业情况等）提供实践经验，使学生能够更加高效地处理和理解大规模数据，满足实际工作中对数据查询和分析的需求。</p>
+<h2 id="二、实习单位和实习岗位-5"><a href="#二、实习单位和实习岗位-5" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-5"><a href="#三、实习内容和实习过程-5" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-5"><a href="#（一）实习内容-5" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，为 Hive 操作提供运行环境。</li>
+<li>进入 Hive 命令行，使用 Hive SQL 创建数据库和数据表。</li>
+<li>向数据表中加载或导入数据，数据包含商户编号、盈利额和商店名等信息。</li>
+<li>使用 <code>distribute by</code> 结合 <code>sort by</code> 查询 Hive 表，统计每个商户中各个商店的盈利情况并按指定顺序排列。</li>
+</ol>
+<h3 id="（二）实习过程-5"><a href="#（二）实习过程-5" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>启动 Hadoop 集群：<ul>
+<li>在 master 节点上执行 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点运行 <code>jps</code> 命令，确认 <code>NameNode</code>、<code>SecondaryNameNode</code>、<code>ResourceManager</code> 进程启动。</li>
+<li>在 <code>slave01</code> 和 <code>slave02</code> 节点分别运行 <code>jps</code> 命令，确认 <code>DataNode</code>、<code>NodeManager</code> 进程启动。</li>
+</ul>
+</li>
+<li>进入 Hive 命令行并创建数据库和表：<ul>
+<li>进入 Hive 客户端，执行 <code>[zkpk@master ~]$ hive</code>。</li>
+<li>创建 <code>sogou</code> 数据库，使用 <code>hive&gt; create database sogou;</code>。</li>
+<li>在 <code>sogou</code> 数据库中创建 <code>store</code> 表，执行 <code>hive&gt; CREATE TABLE IF NOT EXISTS sogou.store(mid STRING, money DOUBLE, name STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code>。</li>
+</ul>
+</li>
+<li>向表中装载数据：<ul>
+<li>退出 Hive 命令行，在 Linux 终端查看原始数据，执行 <code>hive&gt; exit;</code> 和 <code>[zkpk@master ~]$ cat experiment/store</code>。</li>
+<li>重新进入 Hive 客户端，进入 <code>sogou</code> 数据库并将数据文件 <code>store</code> 装载到表中，执行 <code>[zkpk@master ~]$ hive</code>、<code>hive&gt; use sogou;</code> 和 <code>hive&gt; load data local inpath &#39;/home/zkpk/experiment/store&#39; into table store;</code>。</li>
+</ul>
+</li>
+<li>使用 distribute by 查询数据：<ul>
+<li>在 Hive 客户端执行 <code>hive&gt; select mid, money, name from store distribute by mid sort by mid asc, money asc;</code>，统计每个商户中各个商店的盈利情况，并按商户编号升序、盈利额升序排列。</li>
+<li>理解 <code>distribute by</code> 的原理，被设定的字段（<code>mid</code>）为 <code>KEY</code>，数据会通过 <code>HASH</code> 分发到不同的 <code>reducer</code> 机器上，然后 <code>sort by</code> 会对同一个 <code>reducer</code> 机器上的每组数据进行局部排序。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307092503135.png" alt="image-20250307092503135"></p>
+<p><img src="/myimgs/image-20250307092510872.png" alt="image-20250307092510872"></p>
+<p><img src="/myimgs/image-20250307092520665.png" alt="image-20250307092520665"></p>
+<p><img src="/myimgs/image-20250307092531396.png" alt="image-20250307092531396"></p>
+<p><img src="/myimgs/image-20250307092540137.png" alt="image-20250307092540137"></p>
+<h2 id="四、总结与体会-5"><a href="#四、总结与体会-5" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，成功掌握了在 Hive 中使用 <code>distribute by</code> 结合 <code>sort by</code> 对数据进行分析的方法。理解了 <code>distribute by</code> 根据特定字段分发数据到不同 <code>reduce</code> 的原理，以及 <code>sort by</code> 对局部数据排序的作用。在实验过程中，对 Hive SQL 的运用更加熟练，也体会到合理使用这些语句对于处理和分析大规模数据的重要性。同时，认识到在处理数据时，要根据业务需求选择合适的查询方式和排序规则，以获取有价值的信息。这些实践经验将为今后在大数据开发工作中处理类似数据查询和分析任务提供有力支持，也激励自己不断探索和学习 Hive 及其他大数据相关技术，提升自身的专业能力。</p>
+<h1 id="Hive-数仓使用-cluster-by-查询数据实验报告"><a href="#Hive-数仓使用-cluster-by-查询数据实验报告" class="headerlink" title="Hive 数仓使用 cluster by 查询数据实验报告"></a>Hive 数仓使用 cluster by 查询数据实验报告</h1><h2 id="一、实习目的和实习意义-6"><a href="#一、实习目的和实习意义-6" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习的目的是深入学习在 Hive 中使用 <code>cluster by</code> 对数据进行分析的方法，并清晰对比其与 <code>distribute by</code> 的区别。掌握 <code>cluster by</code> 的使用和原理，有助于在大数据开发中更高效地处理和分析数据，提高数据处理的准确性和效率。实习意义在于提升学生在 Hive 环境下的数据操作能力，为实际工作中的数据处理和分析任务提供更丰富的手段，使学生能够更好地适应大数据开发岗位的需求。</p>
+<h2 id="二、实习单位和实习岗位-6"><a href="#二、实习单位和实习岗位-6" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-6"><a href="#三、实习内容和实习过程-6" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-6"><a href="#（一）实习内容-6" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，为 Hive 操作提供稳定的运行环境。</li>
+<li>进入 Hive 命令行，使用 Hive SQL 语句创建数据库和数据表。</li>
+<li>向数据表中加载数据，数据包含商户编号、盈利额和商店名等信息。</li>
+<li>使用 <code>cluster by</code> 对数据进行查询，统计每个商户中各个商店的盈利情况，并按商户升序排列。</li>
+<li>理解 <code>cluster by</code> 的原理，并与 <code>distribute by</code> 进行对比。</li>
+</ol>
+<h3 id="（二）实习过程-6"><a href="#（二）实习过程-6" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>启动 Hadoop 集群：<ul>
+<li>在 master 节点上执行 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点运行 <code>jps</code> 命令，确认 <code>NameNode</code>、<code>SecondaryNameNode</code>、<code>ResourceManager</code> 进程启动。</li>
+<li>在 <code>slave01</code> 和 <code>slave02</code> 节点分别运行 <code>jps</code> 命令，确认 <code>DataNode</code>、<code>NodeManager</code> 进程启动。</li>
+</ul>
+</li>
+<li>进入 Hive 命令行并创建数据库和表：<ul>
+<li>进入 Hive 客户端，执行 <code>[zkpk@master ~]$ hive</code>。</li>
+<li>创建 <code>sogou</code> 数据库，使用 <code>hive&gt; create database sogou;</code>。</li>
+<li>在 <code>sogou</code> 数据库中创建 <code>store</code> 表，执行 <code>hive&gt; CREATE TABLE IF NOT EXISTS sogou.store(mid STRING, money DOUBLE, name STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code>。</li>
+</ul>
+</li>
+<li>向表中装载数据：<ul>
+<li>在 Linux 终端查看原始数据，执行 <code>[zkpk@master ~]$ cat experiment/store</code>。</li>
+<li>进入 Hive 客户端，使用 <code>hive&gt; use sogou;</code> 进入 <code>sogou</code> 数据库，然后执行 <code>hive&gt; load data local inpath &#39;/home/zkpk/experiment/store&#39; into table store;</code> 将数据文件 <code>store</code> 装载到表中。</li>
+</ul>
+</li>
+<li><strong>确认表的存在</strong>：在 Hive 客户端执行 <code>hive&gt; show tables;</code> 确认 <code>store</code> 表已成功创建。</li>
+<li>使用 cluster by 查询数据：<ul>
+<li>在 Hive 客户端执行 <code>hive&gt; select mid, money, name from store cluster by mid;</code> 统计每个商户中各个商店的盈利情况，并按商户升序排列。</li>
+<li>理解 <code>cluster by</code> 的原理，它等价于 <code>distribute by</code> 和 <code>order by</code>，即先根据指定字段（这里是 <code>mid</code>）将数据分发到不同的 <code>reducer</code> 进行处理，然后对每个 <code>reducer</code> 中的数据按该字段进行排序。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307092832912.png" alt="image-20250307092832912"></p>
+<p><img src="/myimgs/image-20250307092841967.png" alt="image-20250307092841967"></p>
+<p><img src="/myimgs/image-20250307092851300.png" alt="image-20250307092851300"></p>
+<p><img src="/myimgs/image-20250307092859197.png" alt="image-20250307092859197"></p>
+<h2 id="四、总结与体会-6"><a href="#四、总结与体会-6" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，我成功掌握了在 Hive 中使用 <code>cluster by</code> 对数据进行分析的方法。理解了 <code>cluster by</code> 的原理，它将数据分发和排序操作结合在一起，简化了查询语句的编写。与 <code>distribute by</code> 相比，<code>cluster by</code> 不仅能实现数据的分发，还能对分发后的数据进行排序，使数据处理更加高效。在实验过程中，我对 Hive SQL 的运用更加熟练，也深刻体会到合理选择查询语句对于数据处理的重要性。在今后的大数据开发工作中，我将能够根据具体需求灵活运用 <code>cluster by</code> 等语句，提高数据处理和分析的效率和质量。同时，我也意识到持续学习和实践对于提升大数据开发能力的重要性，会不断探索和学习更多的 Hive 及大数据相关技术。</p>
+<h1 id="Hive-数仓使用-JOIN-联接查询实验报告"><a href="#Hive-数仓使用-JOIN-联接查询实验报告" class="headerlink" title="Hive 数仓使用 JOIN 联接查询实验报告"></a>Hive 数仓使用 JOIN 联接查询实验报告</h1><h2 id="一、实习目的和实习意义-7"><a href="#一、实习目的和实习意义-7" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习的目的是深入学习 Hive 中的 JOIN 操作，通过使用 sogou 日志文件创建两个表 <code>sogou</code> 和 <code>sogou_limit</code>，并对这两张表分别进行 <code>INNER JOIN</code>、<code>LEFT OUTER JOIN</code>、<code>RIGHT OUTER JOIN</code>、<code>FULL OUTER JOIN</code> 操作，从而掌握这些操作的原理和使用方法。实习意义在于提升学生在 Hive 环境下处理复杂数据查询和关联的能力，使学生能够更好地理解和运用不同类型的 JOIN 操作，为实际工作中的大数据分析和处理提供有力支持，增强学生在大数据开发岗位上的竞争力。</p>
+<h2 id="二、实习单位和实习岗位-7"><a href="#二、实习单位和实习岗位-7" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-7"><a href="#三、实习内容和实习过程-7" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-7"><a href="#（一）实习内容-7" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，为 Hive 操作提供运行环境。</li>
+<li>进入 Hive 命令行，创建数据库和数据表。</li>
+<li>向数据表中加载或导入数据。</li>
+<li>分别使用 <code>INNER JOIN</code>、<code>LEFT OUTER JOIN</code>、<code>RIGHT OUTER JOIN</code>、<code>FULL OUTER JOIN</code> 对两个表进行关联查询，并理解每种 JOIN 操作的原理。</li>
+</ol>
+<h3 id="（二）实习过程-7"><a href="#（二）实习过程-7" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>启动 Hadoop 集群：<ul>
+<li>在 master 节点上执行 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点运行 <code>jps</code> 命令，确认 <code>NameNode</code>、<code>SecondaryNameNode</code>、<code>ResourceManager</code> 进程启动。</li>
+<li>在 <code>slave01</code> 和 <code>slave02</code> 节点分别运行 <code>jps</code> 命令，确认 <code>DataNode</code>、<code>NodeManager</code> 进程启动。</li>
+</ul>
+</li>
+<li>JOIN 操作：<ul>
+<li><strong>启动 Hive</strong>：在 Linux 终端执行 <code>[zkpk@master ~]$ hive</code> 进入 Hive 客户端。</li>
+<li><strong>创建数据库并使用</strong>：在 Hive 客户端执行 <code>hive&gt; show databases;</code> 查看现有数据库，若 <code>hive_test</code> 数据库不存在，则执行 <code>hive&gt; create database hive_test;</code> 创建，然后使用 <code>hive&gt; use hive_test;</code> 进入该数据库。</li>
+<li>创建 <code>sogou</code> 表并加载数据：<ul>
+<li>创建 <code>sogou</code> 表，表中有 6 个字段（<code>ts</code>、<code>uid</code>、<code>keyword</code>、<code>rank</code>、<code>num</code>、<code>url</code>），使用 <code>\t</code> 作为字段分隔符，执行 <code>hive&gt; create table sogou(ts string, uid string, keyword string, rank int, num int, url string) row format delimited fields terminated by &#39;\t&#39; stored as textfile;</code>。</li>
+<li>使用 <code>hive&gt; load data local inpath &#39;/home/zkpk/experiment/sogou_1w.txt&#39; overwrite into table sogou;</code> 将本地数据文件加载到 <code>sogou</code> 表中。</li>
+</ul>
+</li>
+<li>创建 <code>sogou_limit</code> 表并加载数据：<ul>
+<li>创建 <code>sogou_limit</code> 表，表中有 6 个字段（<code>ts</code>、<code>uid</code>、<code>keyword</code>、<code>rank</code>、<code>order</code>、<code>url</code>），使用 <code>\t</code> 作为字段分隔符，执行 <code>hive&gt; create table if not exists sogou_limit(ts string, uid string, keyword string, rank int, </code>order<code> int, url string) row format delimited fields terminated by &#39;\t&#39; stored as textfile;</code>。</li>
+<li>使用 <code>hive&gt; insert overwrite table sogou_limit select * from sogou limit 3;</code> 向 <code>sogou_limit</code> 表中加载数据。</li>
+</ul>
+</li>
+<li><strong>INNER JOIN 操作</strong>：执行 <code>hive&gt; select * from sogou m join sogou_limit n on m.uid = n.uid;</code> 进行内连接查询，只有两个表中都存在与连接标准（<code>m.uid = n.uid</code>）相匹配的数据才会被保留下来。</li>
+<li><strong>LEFT OUTER JOIN 操作</strong>：执行 <code>hive&gt; select m.uid,m.keyword,n.uid,n.keyword from sogou m left outer join sogou_limit n on m.uid = n.uid limit 10;</code> 进行左外连接查询，JOIN 操作符左边表（<code>sogou</code>）中符合 <code>ON</code> 子句的所有记录将会被返回，右边表（<code>sogou_limit</code>）中如果没有符合连接条件的记录，从右边表选择的列的值将会是 <code>NULL</code>。</li>
+<li><strong>RIGHT OUTER JOIN 操作</strong>：执行 <code>hive&gt; select m.uid, m.keyword, n.uid, n.keyword from sogou m right outer join sogou_limit n on m.uid = n.uid limit 10;</code> 进行右外连接查询，会返回右边表（<code>sogou_limit</code>）所有符合 <code>ON</code> 语句的记录，左表（<code>sogou</code>）中匹配不上的字段值用 <code>NULL</code> 代替。</li>
+<li><strong>FULL OUTER JOIN 操作</strong>：执行 <code>hive&gt; select m.uid,m.keyword, n.uid, n.keyword from sogou m full outer join sogou_limit n on m.uid = n.uid limit 10;</code> 进行全外连接查询，包括两个表的 JOIN 结果，在满足条件的情况下，左边在右边没有找到的结果为 <code>NULL</code>，右边在左边没有找到的结果为 <code>NULL</code>。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307093116982.png" alt="image-20250307093116982"></p>
+<p><img src="/myimgs/image-20250307093126845.png" alt="image-20250307093126845"></p>
+<p><img src="/myimgs/image-20250307093144621.png" alt="image-20250307093144621"></p>
+<p><img src="/myimgs/image-20250307093153676.png" alt="image-20250307093153676"></p>
+<p><img src="/myimgs/image-20250307093159766.png" alt="image-20250307093159766"></p>
+<p><img src="/myimgs/image-20250307093206221.png" alt="image-20250307093206221"></p>
+<p><img src="/myimgs/image-20250307093215181.png" alt="image-20250307093215181"></p>
+<p><img src="/myimgs/image-20250307093226238.png" alt="image-20250307093226238"></p>
+<h2 id="四、总结与体会-7"><a href="#四、总结与体会-7" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，我全面掌握了 Hive 中不同类型 JOIN 操作的使用方法和原理。<code>INNER JOIN</code> 只返回两个表中匹配的数据，能有效筛选出满足特定条件的关联数据；<code>LEFT OUTER JOIN</code> 和 <code>RIGHT OUTER JOIN</code> 则分别以左表或右表为主，保留主表的所有记录，对于不匹配的记录用 <code>NULL</code> 填充，这在处理数据缺失或需要保留某一方全部数据的场景中非常有用；<code>FULL OUTER JOIN</code> 则综合了左右外连接的特点，返回两个表的所有记录。同时，我也深刻体会到左外连接和右外连接功能相当，只是左表和右表的角色相反。在实验过程中，我对 Hive SQL 的运用更加熟练，也认识到合理选择 JOIN 操作对于准确获取数据和提高查询效率的重要性。在今后的大数据开发工作中，我将能够根据具体需求灵活运用这些 JOIN 操作，更好地完成数据处理和分析任务。</p>
+<h1 id="Hive-数仓创建数据视图实验报告"><a href="#Hive-数仓创建数据视图实验报告" class="headerlink" title="Hive 数仓创建数据视图实验报告"></a>Hive 数仓创建数据视图实验报告</h1><h2 id="一、实习目的和实习意义-8"><a href="#一、实习目的和实习意义-8" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习的目的是深入学习 Hive 中的视图相关知识，掌握视图的创建、查看、删除等常见操作，以及如何使用视图展示表中的部分数据。通过实践，理解视图在数据库中的作用和特点，并能够灵活运用视图来优化数据查询和提高数据安全性。实习意义在于提升学生在 Hive 环境下的数据管理和操作能力，使其能够更好地应对大数据开发中复杂的数据处理需求，为实际工作打下坚实的基础。</p>
+<h2 id="二、实习单位和实习岗位-8"><a href="#二、实习单位和实习岗位-8" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-8"><a href="#三、实习内容和实习过程-8" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-8"><a href="#（一）实习内容-8" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，为 Hive 操作提供运行环境。</li>
+<li>进入 Hive 命令行，创建数据库和数据表，并向表中加载数据。</li>
+<li>进行视图操作，包括创建视图、查看视图结构和数据、删除视图，以及创建部分列或部分行可见的视图。</li>
+<li>学习并理解视图的作用和特点。</li>
+</ol>
+<h3 id="（二）实习过程-8"><a href="#（二）实习过程-8" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>启动 Hadoop 集群：<ul>
+<li>在 master 节点上执行 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点运行 <code>jps</code> 命令，确认 <code>NameNode</code>、<code>SecondaryNameNode</code>、<code>ResourceManager</code> 进程启动。</li>
+<li>在 <code>slave01</code> 和 <code>slave02</code> 节点分别运行 <code>jps</code> 命令，确认 <code>DataNode</code>、<code>NodeManager</code> 进程启动。</li>
+</ul>
+</li>
+<li>视图操作：<ul>
+<li><strong>启动 Hive</strong>：在 Linux 终端执行 <code>[zkpk@master ~]$ hive</code> 进入 Hive 客户端。</li>
+<li><strong>创建数据库并使用</strong>：在 Hive 客户端执行 <code>hive&gt; create database if not exists hive_test;</code> 创建 <code>hive_test</code> 数据库，然后使用 <code>hive&gt; use hive_test;</code> 进入该数据库。</li>
+<li><strong>创建 <code>p1</code> 表</strong>：创建 <code>p1</code> 表，指定字段分割符为 <code>\t</code>，字段 <code>id</code> 类型为 <code>int</code>，<code>name</code> 类型为 <code>String</code>，执行 <code>create table p1(id int, name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code>。</li>
+<li>加载数据到表并验证：<ul>
+<li>使用 <code>hive&gt; load data local inpath &#39;/home/zkpk/experiment/person.txt&#39; overwrite into table p1;</code> 将本地数据文件加载到 <code>p1</code> 表中。</li>
+<li>执行 <code>hive&gt; select * from p1;</code> 验证导入数据是否成功。</li>
+</ul>
+</li>
+<li><strong>创建视图 <code>p1_view</code></strong>：执行 <code>hive&gt; create view p1_view as select * from p1;</code> 创建视图 <code>p1_view</code>。</li>
+<li>查看 <code>p1_view</code> 视图结构和数据：<ul>
+<li>执行 <code>hive&gt; desc p1_view;</code> 查看视图结构。</li>
+<li>执行 <code>hive&gt; select * from p1_view;</code> 查看视图数据。</li>
+</ul>
+</li>
+<li><strong>删除视图</strong>：执行 <code>hive&gt; drop view p1_view;</code> 删除视图 <code>p1_view</code>。</li>
+<li>创建部分列或部分行可见的视图：<ul>
+<li>执行 <code>hive&gt; create view p1_view1 as select id from p1;</code> 创建视图 <code>p1_view1</code>，只显示 <code>id</code> 列。</li>
+<li>执行 <code>hive&gt; create view p1_view2 as select * from p1 limit 1;</code> 创建视图 <code>p1_view2</code>，只显示第一行数据。</li>
+</ul>
+</li>
+<li><strong>查看新创建的视图中的数据</strong>：执行 <code>hive&gt; select * from p1_view1;</code> 和 <code>hive&gt; select * from p1_view2;</code> 查看视图数据，体会视图对数据安全性的提升。</li>
+<li><strong>理解视图特性</strong>：了解视图是只读的，不能向视图中插入或删除数据，以及视图的优点，如简化数据查询语句、使用户能从多角度看待同一数据、提高数据安全性和提供一定程度的逻辑独立性。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307093532156.png" alt="image-20250307093532156"></p>
+<p><img src="/myimgs/image-20250307093538940.png" alt="image-20250307093538940"></p>
+<p><img src="/myimgs/image-20250307093549602.png" alt="image-20250307093549602"></p>
+<p><img src="/myimgs/image-20250307093556741.png" alt="image-20250307093556741"></p>
+<p><img src="/myimgs/image-20250307093603561.png" alt="image-20250307093603561"></p>
+<p><img src="/myimgs/image-20250307093612062.png" alt="image-20250307093612062"></p>
+<p><img src="/myimgs/image-20250307093620262.png" alt="image-20250307093620262"></p>
+<p><img src="/myimgs/image-20250307093628073.png" alt="image-20250307093628073"></p>
+<p><img src="/myimgs/image-20250307093636009.png" alt="image-20250307093636009"></p>
+<p><img src="/myimgs/image-20250307093643300.png" alt="image-20250307093643300"></p>
+<h2 id="四、总结与体会-8"><a href="#四、总结与体会-8" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，我全面掌握了 Hive 中视图的创建、查看、删除等操作，深刻理解了视图作为一种逻辑窗口和虚表的概念。视图并不存储实际数据，而是基于基本表的数据组成，这使得删除视图不会对基本表数据造成影响。在实践中，我体会到视图的诸多优点，例如通过创建部分列或部分行可见的视图，能够有效提高数据的安全性，只向用户展示其需要的数据。同时，视图可以简化复杂的查询语句，让用户从不同角度查看数据，增强了数据的可读性和可维护性。在今后的大数据开发工作中，我将充分利用视图的这些特性，优化数据查询和管理，提高工作效率。此外，这次实验也让我认识到持续学习和实践对于掌握大数据技术的重要性，我会不断探索和学习更多的 Hive 及相关技术知识。</p>
+<h1 id="ETL-工具：Sqoop-安装部署实验报告"><a href="#ETL-工具：Sqoop-安装部署实验报告" class="headerlink" title="ETL 工具：Sqoop 安装部署实验报告"></a>ETL 工具：Sqoop 安装部署实验报告</h1><h2 id="一、实习目的和实习意义-9"><a href="#一、实习目的和实习意义-9" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习的目的是掌握 ETL 工具 Sqoop 的安装部署方法，深入理解 Sqoop 在 Hadoop 和关系数据库服务器之间传送数据的核心功能。通过实践操作，熟悉 Sqoop 的安装流程，为后续使用 Sqoop 进行数据迁移和处理打下坚实基础。实习意义在于提升学生在大数据开发中数据集成和处理的能力，使学生能够熟练运用 Sqoop 工具解决实际工作中的数据迁移问题，增强在大数据领域的实践能力和竞争力。</p>
+<h2 id="二、实习单位和实习岗位-9"><a href="#二、实习单位和实习岗位-9" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-9"><a href="#三、实习内容和实习过程-9" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-9"><a href="#（一）实习内容-9" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>解压 Sqoop 压缩包，完成 Sqoop 的初步安装。</li>
+<li>配置 MySQL 连接器，使 Sqoop 能够与 MySQL 数据库进行交互。</li>
+<li>配置环境变量，确保 Sqoop 能够正确识别 Hadoop 和 Hive 等相关组件的路径。</li>
+<li>运行 Sqoop 命令进行验证，检查安装部署是否成功，并学习使用 Sqoop 命令查看数据库和数据表。</li>
+</ol>
+<h3 id="（二）实习过程-9"><a href="#（二）实习过程-9" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>解压并安装 Sqoop：<ul>
+<li>在 master 节点的 Linux 终端中，执行 <code>[zkpk@master ~]$ tar -zxvf /home/zkpk/tgz/sqoop/sqoop-1.4.5.bin__hadoop-2.0.4-alpha.tar.gz -C /home/zkpk</code> 解压 Sqoop 压缩包。</li>
+<li>进入解压后的目录，执行 <code>[zkpk@master ~]$ cd sqoop-1.4.5.bin__hadoop-2.0.4-alpha/</code> 并使用 <code>[zkpk@master sqoop-1.4.5.bin__hadoop-2.0.4-alpha]$ ls</code> 查看目录内容。</li>
+</ul>
+</li>
+<li>配置 MySQL 连接器：<ul>
+<li>将 MySQL 的 Java connector 复制到 Sqoop 的依赖库中，执行 <code>[zkpk@master sqoop-1.4.5.bin__hadoop-2.0.4-alpha]$ cp /home/zkpk/tgz/mysql-connector-java-5.1.28.jar ./lib/</code>。</li>
+<li>进入 <code>lib</code> 目录，执行 <code>[zkpk@master sqoop-1.4.5.bin__hadoop-2.0.4-alpha]$ cd lib/</code> 并使用 <code>[zkpk@master lib]$ ls</code> 查看文件。</li>
+</ul>
+</li>
+<li>配置环境变量：<ul>
+<li>进入 <code>conf</code> 目录，执行 <code>[zkpk@master lib]$ cd</code> 和 <code>[zkpk@master ~]$ cd sqoop-1.4.5.bin__hadoop-2.0.4-alpha/conf/</code>，并使用 <code>[zkpk@master conf]$ ls</code> 查看目录内容。</li>
+<li>复制 <code>sqoop-env-template.sh</code> 文件，命名为 <code>sqoop-env.sh</code>，执行 <code>[zkpk@master conf]$ cp sqoop-env-template.sh sqoop-env.sh</code> 并使用 <code>[zkpk@master conf]$ ls</code> 确认。</li>
+<li>修改 <code>sqoop-env.sh</code> 文件，按 <code>i</code> 进入插入模式，补全内容如下：</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Set path to where bin/hadoop is available</span></span><br><span class="line"><span class="built_in">export</span> HADOOP_COMMON_HOME=/home/zkpk/hadoop-2.7.3</span><br><span class="line"><span class="comment">#Set path to where hadoop-*-core.jar is available</span></span><br><span class="line"><span class="built_in">export</span> HADOOP_MAPRED_HOME=/home/zkpk/hadoop-2.7.3</span><br><span class="line"><span class="comment">#set the path to where bin/hbase is available</span></span><br><span class="line"><span class="comment">#export HBASE_HOME=</span></span><br><span class="line"><span class="comment">#Set the path to where bin/hive is available</span></span><br><span class="line"><span class="built_in">export</span> HIVE_HOME=/home/zkpk/apache-hive-2.1.1-bin</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>编写完成后，按下 <code>esc</code> 键回到命令模式，输入 <code>:wq</code> 保存退出。</li>
+</ul>
+<ol>
+<li>启动并验证 Sqoop：<ul>
+<li>运行 Sqoop 命令，执行 <code>[zkpk@master conf]$ cd ..</code> 和 <code>[zkpk@master sqoop-1.4.5.bin__hadoop-2.0.4-alpha]$ bin/sqoop help</code> 检查安装情况。若出现预期结果，则说明安装部署成功。</li>
+<li>使用 <code>[zkpk@master sqoop-1.4.5.bin__hadoop-2.0.4-alpha]$ bin/sqoop help import</code> 查看 <code>import</code> 命令的具体使用方式。</li>
+<li>使用 Sqoop 连接 MySQL 数据库查看数据库和数据表，执行 <code>[zkpk@master sqoop-1.4.5.bin__hadoop-2.0.4-alpha]$ bin/sqoop list-databases --connect jdbc:mysql://master:3306/ --username zkpk --password zkpk</code>。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307093953893.png" alt="image-20250307093953893"></p>
+<p><img src="/myimgs/image-20250307094001923.png" alt="image-20250307094001923"></p>
+<p><img src="/myimgs/image-20250307094009340.png" alt="image-20250307094009340"></p>
+<p><img src="/myimgs/image-20250307094017068.png" alt="image-20250307094017068"></p>
+<p><img src="/myimgs/image-20250307094023974.png" alt="image-20250307094023974"></p>
+<p><img src="/myimgs/image-20250307094036959.png" alt="image-20250307094036959"></p>
+<h2 id="四、总结与体会-9"><a href="#四、总结与体会-9" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，我成功完成了 Sqoop 的安装部署，并验证了其功能。深刻理解了 Sqoop 作为一款数据迁移工具的重要性，以及正确配置安装环境对于后续使用 Sqoop 命令的关键作用。在安装过程中，每一个步骤都需要谨慎操作，特别是环境变量的配置，稍有不慎就可能导致 Sqoop 无法正常运行。通过查看命令的使用方式和连接 MySQL 数据库查看信息，我对 Sqoop 的基本功能有了初步的认识。在今后的大数据开发工作中，我将继续深入学习 Sqoop 的各种命令和使用场景，充分发挥其在数据迁移和集成方面的优势，为数据处理和分析工作提供有力支持。同时，这次实验也让我认识到在学习新技术时，实践操作和理论知识相结合的重要性，只有通过不断的实践才能真正掌握和运用所学知识。</p>
+<h1 id="ETL-工具：导出-Hive-数据至-MySQL-实验报告"><a href="#ETL-工具：导出-Hive-数据至-MySQL-实验报告" class="headerlink" title="ETL 工具：导出 Hive 数据至 MySQL 实验报告"></a>ETL 工具：导出 Hive 数据至 MySQL 实验报告</h1><h2 id="一、实习目的和实习意义-10"><a href="#一、实习目的和实习意义-10" class="headerlink" title="一、实习目的和实习意义"></a>一、实习目的和实习意义</h2><p>本次实习的目的是学习使用 Sqoop 命令将 Hive 中的数据导出到 MySQL 数据库，深入理解 Sqoop 命令中 <code>export</code> 的使用方法及其常用配置。通过实际操作，掌握在大数据环境下从分布式数据仓库（Hive）向关系型数据库（MySQL）进行数据迁移的技术，提升数据处理和集成的能力。实习意义在于使学生能够熟练运用 Sqoop 工具解决实际工作中的数据迁移问题，增强在大数据开发领域的实践技能和竞争力，为后续的数据分析和应用提供有力支持。</p>
+<h2 id="二、实习单位和实习岗位-10"><a href="#二、实习单位和实习岗位-10" class="headerlink" title="二、实习单位和实习岗位"></a>二、实习单位和实习岗位</h2><p>实习单位：重庆邮电大学<br>实习岗位：大数据开发</p>
+<h2 id="三、实习内容和实习过程-10"><a href="#三、实习内容和实习过程-10" class="headerlink" title="三、实习内容和实习过程"></a>三、实习内容和实习过程</h2><h3 id="（一）实习内容-10"><a href="#（一）实习内容-10" class="headerlink" title="（一）实习内容"></a>（一）实习内容</h3><ol>
+<li>启动 Hadoop 集群，为 Hive 和 Sqoop 操作提供运行环境。</li>
+<li>登录 MySQL 数据库，检查并创建 <code>test</code> 数据库和 <code>uid_cnt</code> 表。</li>
+<li>启动 Hive，检查并创建 <code>sogou</code> 数据库和 <code>uid_cnt</code> 表，向 Hive 表中加载数据。</li>
+<li>使用 Sqoop 命令将 Hive 中的 <code>sogou.uid_cnt</code> 表数据导出到 MySQL 的 <code>test.uid_cnt</code> 表。</li>
+<li>验证数据是否成功导出到 MySQL 数据库。</li>
+</ol>
+<h3 id="（二）实习过程-10"><a href="#（二）实习过程-10" class="headerlink" title="（二）实习过程"></a>（二）实习过程</h3><ol>
+<li>启动 Hadoop 集群：<ul>
+<li>在 master 节点的 Linux 终端中，执行 <code>[zkpk@master ~]$ start-all.sh</code> 启动 Hadoop 集群。</li>
+<li>在 master 节点运行 <code>jps</code> 命令，确认 <code>NameNode</code>、<code>SecondaryNameNode</code>、<code>ResourceManager</code> 进程启动。</li>
+<li>在 <code>slave01</code> 和 <code>slave02</code> 节点分别运行 <code>jps</code> 命令，确认 <code>DataNode</code>、<code>NodeManager</code> 进程启动。</li>
+</ul>
+</li>
+<li>登录 MySQL 并创建数据库和表：<ul>
+<li>以 MySQL 的 root 用户登录，执行 <code>[zkpk@master ~]$ mysql –uroot –pzkpk</code>。</li>
+<li>检查是否有 <code>test</code> 数据库，执行 <code>mysql&gt; show databases;</code>，若没有则创建，执行 <code>mysql&gt; create database test;</code> 并再次执行 <code>mysql&gt; show databases;</code> 验证。</li>
+<li>切换到 <code>test</code> 数据库，执行 <code>mysql&gt; use test;</code>，检查是否有 <code>uid_cnt</code> 表，执行 <code>mysql&gt; show tables;</code>。</li>
+<li>创建 <code>uid_cnt</code> 表，表的字段要与 Hive 中需要导出的表的字段一一对应，执行 <code>mysql&gt; CREATE TABLE IF NOT EXISTS test.uid_cnt(uid varchar(255) DEFAULT NULL, cnt int(11) DEFAULT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8;</code> 并使用 <code>mysql&gt; show create table test.uid_cnt;</code> 验证表是否创建成功。</li>
+</ul>
+</li>
+<li>启动 Hive 并创建数据库、表和加载数据：<ul>
+<li>退出 MySQL 数据库，执行 <code>mysql&gt; exit;</code>，在 Linux 终端使用 <code>hive</code> 命令进入 Hive 的 CLI 命令行，执行 <code>[zkpk@master ~]$ hive</code>。</li>
+<li>检查 <code>sogou</code> 数据库是否存在于 Hive 中，执行 <code>hive&gt; show databases;</code>，若不存在则创建，执行 <code>hive&gt; create database sogou;</code>。</li>
+<li>切换到 <code>sogou</code> 数据库，执行 <code>hive&gt; use sogou;</code>，创建 <code>uid_cnt</code> 表，表包含两列 <code>uid</code> 和 <code>cnt</code>，字段间分割符是 <code>\t</code>，执行 <code>hive&gt; create table sogou.uid_cnt(uid STRING, cnt INT ) COMMENT &#39;This is the sogou search data of one day&#39; ROW FORMAT DELIMITED FIELDS TERMINATED BY &#39;\t&#39; STORED AS TEXTFILE;</code> 并使用 <code>hive&gt; show create table sogou.uid_cnt;</code> 验证表是否创建成功。</li>
+<li>加载数据到 <code>uid_cnt</code> 表，执行 <code>hive&gt; load data local inpath &#39;/home/zkpk/experiment/000000_0&#39; into table sogou.uid_cnt;</code> 并使用 <code>hive&gt; select * from sogou.uid_cnt limit 10;</code> 验证数据是否加载成功。</li>
+</ul>
+</li>
+<li>使用 Sqoop 命令将 Hive 数据导出到 MySQL：<ul>
+<li>退出 Hive 客户端，执行 <code>hive&gt; exit;</code>，在 Linux 终端进入 Sqoop 安装目录，执行 <code>[zkpk@master ~]$ cd sqoop-1.4.5.bin__hadoop-2.0.4-alpha/</code>。</li>
+<li>使用 <code>export</code> 命令导出数据，执行 <code>[zkpk@master sqoop-1.4.5.bin__hadoop-2.0.4-alpha]$ bin/sqoop export --connect jdbc:mysql://master:3306/test --username hadoop --password hadoop --table uid_cnt --export-dir &#39;/user/hive/warehouse/sogou.db/uid_cnt&#39; --fields-terminated-by &#39;\t&#39;</code>。</li>
+<li>查看执行效果。</li>
+</ul>
+</li>
+<li>验证数据是否导出成功：<ul>
+<li>在 Linux 终端进入 MySQL 数据库，执行 <code>[zkpk@master sqoop-1.4.5.bin__hadoop-2.0.4-alpha]$ mysql -uroot -pzkpk</code>。</li>
+<li>在 MySQL 中查询对应的表数据，执行 <code>mysql&gt; select * from test.uid_cnt limit 10;</code> 验证是否导出成功。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/myimgs/image-20250307095144769.png" alt="image-20250307095144769"></p>
+<p><img src="/myimgs/image-20250307095153705.png" alt="image-20250307095153705"></p>
+<p><img src="/myimgs/image-20250307095205349.png" alt="image-20250307095205349"></p>
+<p><img src="/myimgs/image-20250307095213918.png" alt="image-20250307095213918"></p>
+<p><img src="/myimgs/image-20250307095222405.png" alt="image-20250307095222405"></p>
+<p><img src="/myimgs/image-20250307095229639.png" alt="image-20250307095229639"></p>
+<p><img src="/myimgs/image-20250307095239636.png" alt="image-20250307095239636"></p>
+<p><img src="/myimgs/image-20250307095251207.png" alt="image-20250307095251207"></p>
+<p><img src="/myimgs/image-20250307095259554.png" alt="image-20250307095259554"></p>
+<p><img src="/myimgs/image-20250307095308427.png" alt="image-20250307095308427"></p>
+<p><img src="/myimgs/image-20250307095319183.png" alt="image-20250307095319183"></p>
+<p><img src="/myimgs/image-20250307095330546.png" alt="image-20250307095330546"></p>
+<h2 id="四、总结与体会-10"><a href="#四、总结与体会-10" class="headerlink" title="四、总结与体会"></a>四、总结与体会</h2><p>通过本次实验，我成功掌握了使用 Sqoop 命令将 Hive 数据导出到 MySQL 数据库的方法。深刻认识到在使用 Sqoop 命令时，准确理解每个选项的功能至关重要。明确了从 HDFS 往其他关系型数据库是使用 <code>--export</code> 进行导出操作，而从关系型数据库到 HDFS 是使用 <code>--import</code> 进行导入操作。<code>--connect</code> 要正确指定数据库的 URL，<code>--username</code> 和 <code>--password</code> 要准确提供登录信息，<code>--table</code> 要指定正确的目标表，<code>--export-dir</code> 要设置好导出数据在 HDFS 上的存储位置，<code>--fields-terminated-by</code> 要确定好数据的分隔符。在实验过程中，每一个步骤都需要仔细操作，任何一个环节的失误都可能导致数据导出失败。通过验证数据是否成功导出到 MySQL 数据库，我直观地看到了数据从 Hive 迁移到 MySQL 的过程，对 Sqoop 在数据迁移方面的强大功能有了更深刻的体会。在今后的大数据开发工作中，我将能够熟练运用 Sqoop 进行数据迁移，提高数据处理和集成的效率。同时，这次实验也让我意识到不断学习和实践对于掌握大数据技术的重要性，我会继续深入学习 Sqoop 及其他相关技术，提升自己的专业能力。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://obliviate231.github.io">Obliviate</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://obliviate231.github.io/2025/02/25/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/">https://obliviate231.github.io/2025/02/25/%E4%BA%91%E8%AE%A1%E7%AE%97%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%BC%E5%90%88%E5%AE%9E%E8%B7%B5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://obliviate231.github.io" target="_blank">Obliviate</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/">分布式</a></div><div class="post-share"><div class="social-share" data-image="/img/my_profile.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/02/24/hello%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86/" title="hello多核处理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">hello多核处理</div></div><div class="info-2"><div class="info-item-1">第二次课我直接用的华为云自带的远程连接   编译器是之前配置的window下wsl(unbuntu) + vscode 下面是c++矩阵乘法代码, 一开始设置阶数无上限(for 循环没有break条件), 后面改成了1秒, 但是发现有负数???? 就选前后5次取平均值了 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105#include &lt;iostream&gt;#include &lt;chrono&gt;#include &lt;vector&gt;#include &lt;fstream&gt;#include &lt;cstdio&gt;//...</div></div></div></a><a class="pagination-related" href="/2025/02/26/cmu15445/" title="hello多核处理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">hello多核处理</div></div><div class="info-2"><div class="info-item-1">cmu154452022 CMU-15445 全总结 - 知乎 CMU15445 Fall2023 Project 0-4 通关全记录 - 知乎 LearnCpp 中文版 CMU 15 445 Fall 2023 project 0 cpp primer详细讲解_哔哩哔哩_bilibili （全网最详细！！！）CMU15-445（Fall 2023）——从环境搭建开始的P0详细历程及踩坑经历_cmu15445-CSDN博客 Task1实现 Trie (前缀树)123456789101112131415161718192021222324252627282930313233343536373839404142class Trie &#123;private:    vector&lt;Trie*&gt; son;    bool isEnd;    Trie* searchProfix(string prefix)&#123;        Trie* node = this;        for(char ch: prefix) &#123;            ch -=...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/02/26/cmu15445/" title="hello多核处理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-02-26</div><div class="info-item-2">hello多核处理</div></div><div class="info-2"><div class="info-item-1">cmu154452022 CMU-15445 全总结 - 知乎 CMU15445 Fall2023 Project 0-4 通关全记录 - 知乎 LearnCpp 中文版 CMU 15 445 Fall 2023 project 0 cpp primer详细讲解_哔哩哔哩_bilibili （全网最详细！！！）CMU15-445（Fall 2023）——从环境搭建开始的P0详细历程及踩坑经历_cmu15445-CSDN博客 Task1实现 Trie (前缀树)123456789101112131415161718192021222324252627282930313233343536373839404142class Trie &#123;private:    vector&lt;Trie*&gt; son;    bool isEnd;    Trie* searchProfix(string prefix)&#123;        Trie* node = this;        for(char ch: prefix) &#123;            ch -=...</div></div></div></a><a class="pagination-related" href="/2025/02/24/hello%E5%A4%9A%E6%A0%B8%E5%A4%84%E7%90%86/" title="hello多核处理"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-02-24</div><div class="info-item-2">hello多核处理</div></div><div class="info-2"><div class="info-item-1">第二次课我直接用的华为云自带的远程连接   编译器是之前配置的window下wsl(unbuntu) + vscode 下面是c++矩阵乘法代码, 一开始设置阶数无上限(for 循环没有break条件), 后面改成了1秒, 但是发现有负数???? 就选前后5次取平均值了 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105#include &lt;iostream&gt;#include &lt;chrono&gt;#include &lt;vector&gt;#include &lt;fstream&gt;#include &lt;cstdio&gt;//...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/my_profile.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Obliviate</div><div class="author-info-description">个人博客 | 技术笔记与生活随笔</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/obliviate231" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2245688624@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2245688524&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Not for victory, but for the thrill of near-death at defeat's brink.</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MySQL-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">1.</span> <span class="toc-text">MySQL 安装配置实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89"><span class="toc-number">1.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D"><span class="toc-number">1.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B"><span class="toc-number">1.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9"><span class="toc-number">1.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B"><span class="toc-number">1.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A"><span class="toc-number">1.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hive-%E6%95%B0%E4%BB%93%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">2.</span> <span class="toc-text">Hive 数仓安装部署实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-1"><span class="toc-number">2.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-1"><span class="toc-number">2.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-1"><span class="toc-number">2.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-1"><span class="toc-number">2.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-1"><span class="toc-number">2.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-1"><span class="toc-number">2.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hive-%E6%95%B0%E4%BB%93%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%A0%E9%99%A4%E6%95%B0%E6%8D%AE%E5%BA%93%E3%80%81%E8%A1%A8%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">3.</span> <span class="toc-text">Hive 数仓创建、删除数据库、表实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-2"><span class="toc-number">3.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-2"><span class="toc-number">3.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-2"><span class="toc-number">3.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-2"><span class="toc-number">3.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-2"><span class="toc-number">3.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-2"><span class="toc-number">3.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hive-%E6%95%B0%E4%BB%93%E5%AF%BC%E5%85%A5%E3%80%81%E5%AF%BC%E5%87%BA%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">4.</span> <span class="toc-text">Hive 数仓导入、导出表数据实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-3"><span class="toc-number">4.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-3"><span class="toc-number">4.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-3"><span class="toc-number">4.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-3"><span class="toc-number">4.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-3"><span class="toc-number">4.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-3"><span class="toc-number">4.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hive-%E6%95%B0%E4%BB%93%E6%93%8D%E4%BD%9C%E5%88%86%E5%8C%BA%E8%A1%A8%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">5.</span> <span class="toc-text">Hive 数仓操作分区表实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-4"><span class="toc-number">5.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-4"><span class="toc-number">5.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-4"><span class="toc-number">5.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-4"><span class="toc-number">5.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-4"><span class="toc-number">5.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-4"><span class="toc-number">5.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hive-%E6%95%B0%E4%BB%93%E4%BD%BF%E7%94%A8-distribute-by-%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">6.</span> <span class="toc-text">Hive 数仓使用 distribute by 查询数据实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-5"><span class="toc-number">6.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-5"><span class="toc-number">6.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-5"><span class="toc-number">6.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-5"><span class="toc-number">6.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-5"><span class="toc-number">6.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-5"><span class="toc-number">6.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hive-%E6%95%B0%E4%BB%93%E4%BD%BF%E7%94%A8-cluster-by-%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">7.</span> <span class="toc-text">Hive 数仓使用 cluster by 查询数据实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-6"><span class="toc-number">7.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-6"><span class="toc-number">7.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-6"><span class="toc-number">7.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-6"><span class="toc-number">7.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-6"><span class="toc-number">7.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-6"><span class="toc-number">7.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hive-%E6%95%B0%E4%BB%93%E4%BD%BF%E7%94%A8-JOIN-%E8%81%94%E6%8E%A5%E6%9F%A5%E8%AF%A2%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">8.</span> <span class="toc-text">Hive 数仓使用 JOIN 联接查询实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-7"><span class="toc-number">8.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-7"><span class="toc-number">8.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-7"><span class="toc-number">8.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-7"><span class="toc-number">8.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-7"><span class="toc-number">8.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-7"><span class="toc-number">8.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hive-%E6%95%B0%E4%BB%93%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E8%A7%86%E5%9B%BE%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">9.</span> <span class="toc-text">Hive 数仓创建数据视图实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-8"><span class="toc-number">9.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-8"><span class="toc-number">9.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-8"><span class="toc-number">9.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-8"><span class="toc-number">9.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-8"><span class="toc-number">9.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-8"><span class="toc-number">9.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ETL-%E5%B7%A5%E5%85%B7%EF%BC%9ASqoop-%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">10.</span> <span class="toc-text">ETL 工具：Sqoop 安装部署实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-9"><span class="toc-number">10.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-9"><span class="toc-number">10.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-9"><span class="toc-number">10.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-9"><span class="toc-number">10.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-9"><span class="toc-number">10.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-9"><span class="toc-number">10.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ETL-%E5%B7%A5%E5%85%B7%EF%BC%9A%E5%AF%BC%E5%87%BA-Hive-%E6%95%B0%E6%8D%AE%E8%87%B3-MySQL-%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A"><span class="toc-number">11.</span> <span class="toc-text">ETL 工具：导出 Hive 数据至 MySQL 实验报告</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%9E%E4%B9%A0%E7%9B%AE%E7%9A%84%E5%92%8C%E5%AE%9E%E4%B9%A0%E6%84%8F%E4%B9%89-10"><span class="toc-number">11.1.</span> <span class="toc-text">一、实习目的和实习意义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%9E%E4%B9%A0%E5%8D%95%E4%BD%8D%E5%92%8C%E5%AE%9E%E4%B9%A0%E5%B2%97%E4%BD%8D-10"><span class="toc-number">11.2.</span> <span class="toc-text">二、实习单位和实习岗位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9%E5%92%8C%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-10"><span class="toc-number">11.3.</span> <span class="toc-text">三、实习内容和实习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AE%9E%E4%B9%A0%E5%86%85%E5%AE%B9-10"><span class="toc-number">11.3.1.</span> <span class="toc-text">（一）实习内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%AE%9E%E4%B9%A0%E8%BF%87%E7%A8%8B-10"><span class="toc-number">11.3.2.</span> <span class="toc-text">（二）实习过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E4%B8%8E%E4%BD%93%E4%BC%9A-10"><span class="toc-number">11.4.</span> <span class="toc-text">四、总结与体会</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2025 By Obliviate</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.3</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
